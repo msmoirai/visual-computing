@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<r:content_for name="header-extras">
+  <r:partial name="custom-patterns/critical" />
+</r:content_for>
 
-<a href="#" id="maincontent"></a>
-<r:partial name="patterns/wvu-hero" />
+<r:partial name="custom-patterns/hero" />
+<r:partial name="custom-patterns/callout" />
+<r:partial name="custom-patterns/expertise__frontpage" />

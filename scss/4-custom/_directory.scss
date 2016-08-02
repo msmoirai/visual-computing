@@ -1,0 +1,92 @@
+// Profile List
+
+.profile__items{
+  @include span-columns(12);
+  list-style-type: none;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  li{
+    @include span-columns(12);
+    border-bottom: 1px solid $pms-429-c;
+    &:last-child { border-bottom: none; }
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+      border-bottom: none;
+    }
+  }
+}
+
+.profile {
+	img{
+    -webkit-filter: brightness(100%);
+	  filter: brightness(100%);
+		border-radius: 50%;
+		display: table;
+		margin: 0 auto;
+		height: 250px;
+		width: 250px;
+    @include mq($bp-medium) {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    }
+	}
+	&:hover img {
+	  -webkit-filter: brightness(100%);
+	  filter: brightness(100%);
+	  -webkit-transition: all .3s ease;
+	  -moz-transition: all 3s ease;
+	  -o-transition: all .3s ease;
+	  -ms-transition: all .3s ease;
+	  transition: all .3s ease;
+	}
+	&:hover .profile-highlight{
+	  color: $hover-link-color;
+	  transition: background .3s ease;
+	}
+	a, a:hover{ text-decoration: none; }
+}
+
+.profile-highlight{
+  color: $base-link-color;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 0;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.affiliated-faculty {
+	p {
+		font-weight: normal;
+		margin: 0;
+	}
+}
+
+
+//Affiliated Faculty Styles
+.affiliated-faculty {
+  @include span-columns(12);
+  list-style-type: none;
+  ul {
+  	padding: 0;
+  }
+  li{
+    @include span-columns(12);
+    display: table;
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: auto;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    border-bottom: 1px solid $pms-429-c;
+    &:last-child { border-bottom: none; }
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+      border-bottom: none;
+    }
+  }
+}

@@ -7,7 +7,44 @@ shared_themes:
 
 editable_region:
 
-  main: "This content comes from the mock_data.yml file in your project's root. Open the file to edit this content."
+  main: |
+    <ul class="publications">
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+    </ul>
+
+    <ul class="patents">
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+      <li>
+        <h3><a href="#">Publication Name</a></h3>
+        <p>Publication Desc</p>
+      </li>
+    </ul>
 
   sidebar: "This is an editable region in the sidebar."
 
@@ -25,6 +62,18 @@ editable_region:
   long-paragraph:
     "<%= Faker::Lorem.paragraph(7) %>"
 
+  title:
+    "Title 1"
+
+  secondary-title:
+    "Sub Title"
+
+  description:
+    "Lorem Ipsum"
+
+  action-button: |
+    <a class="button button--white button--big" href="#">Some Action Text</a>
+
   wvu-hero-title-top:
     "It Starts"
 
@@ -37,10 +86,10 @@ editable_region:
   wvu-header__title:
     "Benjamin M. Statler College of <br>Engineering and Mineral Resources"
 
-  wvu-masthead__college-link:
+  wvu-masthead__college-link: |
     <a href="#">Eberly College of Arts & Sciences</a>
 
-  wvu-hero__photo:
+  wvu-hero__photo: |
     <img src="https://patterns.wvu.edu/images/coopers-rock.jpg" />
 
   wvu-hero__photo-2:
@@ -82,14 +131,62 @@ editable_region:
   wvu-triptych__header-3:
     "Header 3"
 
-  wvu-triptych__button-1:
+  wvu-triptych__button-1: |
     <a href="#" class="button">Button</a>
 
-  wvu-triptych__button-2:
+  wvu-triptych__button-2: |
     <a href="#" class="button">Button</a>
 
-  wvu-triptych__button-3:
+  wvu-triptych__button-3: |
     <a href="#" class="button">Button</a>
+
+  landing-page-header: |
+    <img src="https://placehold.it/1720x530" alt="placeholder image" />
+
+  triptych-header-one: |
+    Diverse Fuel Experience
+
+  triptych-one: |
+      <ul>
+        <li>Ultra-low sulfur diesel (ULSD)</li>
+        <li>Biodiesel</li>
+        <li>Natural Gas (<abbr title="Compressed Natural Gas">CNG</abbr>, <abbr title="Liquid Natural Gas">LNG</abbr>)</li>
+        <li>Hydrogen</li>
+        <li>Electric and Hybrid Systems</li>
+        <li>and others</li>
+      </ul>
+
+  triptych-header-two: |
+    Product Compliance Testing
+
+  triptych-two: |
+      <ul>
+        <li>Engines</li>
+        <li>Vehicles</li>
+        <li>Locomotives</li>
+        <li>Aftertreatment Systems</li>
+        <li>Fuel Additives</li>
+        <li>Retrofit Kits</li>
+        <li>Federal and State Agency Standards</li>
+      </ul>
+
+  triptych-header-three: |
+    Unique Qualifications
+
+  triptych-three: |
+      <ul>
+        <li>developed the world's first mobile on-board emission testing system</li>
+        <li>one of the few engine labs in the country recognized by both <a href="http://www.arb.ca.gov" title="California Air Resources Board (CARB)">California</a> and <a href="http://www.tceq.state.tx.us/" title="Texas Commission on Environmental Quality (TCEQ)">Texas</a> air quality boards</li>
+        <li>the only mobile heavy-duty chassis dynamometer in the region</li>
+        <li>measured heavy-duty vehicle emissions from over 1,000 buses and trucks at more than 100 locations across North America</li>
+        <li>built the largest national database of heavy-duty vehicle exhaust emissions and fuel efficiency data</li>
+      </ul>
+
+  triptych-action: |
+    <a class="button button--big" href="#">Action Item</a>
+
+  site-blurb: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien lectus, laoreet eget congue id, dictum non nisl. Integer tincidunt, <a href="#">libero vitae laoreet maximus</a>, quam urna consequat dui, eget cursus tortor ipsum eget massa. Maecenas cursus sapien eu ligula tempus, non ultrices augue convallis. Donec eget finibus quam. Mauris leo sapien, vehicula eget sollicitudin rhoncus, dapibus at eros. Pellentesque in urna euismod, imperdiet magna id, luctus erat. Cras eget placerat mauris. Fusce libero ipsum, mollis at tellus commodo, egestas volutpat libero. Pellentesque consequat egestas mattis.
 
   wvu-quadtych__content-1: |
     <ul>
@@ -194,6 +291,12 @@ editable_region:
   wvu-profile__email: |
     <a href="mailto:<%= Faker::Internet.email %>"><%= Faker::Internet.email %></a>
 
+  wvu-profile__location: |
+    MRB 373
+
+  wvu-profile__website: |
+    <a href="<%= Faker::Internet.url %>"><%= Faker::Internet.url %></a>
+
   wvu-profile__short-description:
     "This is a short description for this profile. <%= Faker::Hacker.say_something_smart %>"
 
@@ -227,6 +330,10 @@ page:
     wvu-profile__phone: "<%= Faker::PhoneNumber.cell_phone %>"
     wvu-profile__email: |
       <a href="mailto:<%= Faker::Internet.email %>"><%= Faker::Internet.email %></a>
+    wvu-profile__location: |
+      MRB 373
+    wvu-profile__website: |
+      <a href="<%= Faker::Internet.url %>"><%= Faker::Internet.url %></a>
     wvu-profile__short-description: "This is a short description for this profile. <%= Faker::Hacker.say_something_smart %>"
     wvu-profile__photo: |
       <img src="<%= Faker::Avatar.image %>" alt=" " />

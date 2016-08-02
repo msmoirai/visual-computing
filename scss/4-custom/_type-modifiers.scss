@@ -1,0 +1,36 @@
+.wvu-container{
+  h2.slash{
+    @include wvu-shout();
+    position: relative;
+    z-index: 1;
+  &:before{
+    content: '';
+    @include mq($bp-large) {
+      height: 80px;
+      position: absolute;
+      top: -30px;
+      right: 0;
+      bottom: 0;
+      left: -140px;
+      background-image: url("../images/wvu-slash-gold.svg");
+      background-repeat: no-repeat;
+      background-size: 190px;
+      z-index: -1;
+      }
+    }
+  }
+}
+
+.wvu-masthead__search-and-submit{
+  .statler-masthead__link{
+    color: $wvu-gold;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover { text-decoration: underline;}
+  }
+}
+
+.collaborators {
+  list-style: none;
+  list-style-type: none;
+}

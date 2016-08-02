@@ -1,0 +1,150 @@
+.wvu-profile__contact-card{
+	max-width: 100%;
+	color: $black;
+  background-color: #fcfcfc;
+  border-top: 1px solid #a2aaad;
+  border-bottom: 1px solid #a2aaad;
+}
+
+.wvu-profile__contact-card__container{
+	@include outer-container();
+	margin: 3rem auto;
+	@include mq($bp-medium) {
+		margin: 5rem auto;
+		max-width: 850px;
+  }
+}
+
+.wvu-profile__contact-card__profile{
+		max-width: 1000px;
+    display: block;
+    @include mq($bp-small) {
+      padding: 1rem;
+    }
+}
+
+.wvu-profile__contact-card__profile-photo{
+  img{border-radius: 50%; display:table; margin: 0 auto; margin-bottom: 2rem; max-width: 275px;}
+  @include mq($bp-medium) {
+    @include span-columns(4);
+    }
+  }
+.wvu-profile__contact-card__profile-information{
+  display: table; margin: 0 auto; padding: 0 1.5rem;
+    ul { margin: 0; padding: 0;
+      li{ list-style-type: none; display: block;}
+    }
+    @include mq($bp-small) {
+      ul {
+        margin: 0;
+        padding: 0;
+        li{
+          display: block;
+        } //li
+      } //ul
+    } //mq
+    @include mq($bp-medium) {
+  	  ul {
+  	    li{
+  	      display: block;
+          padding: 0 0.5rem;
+
+        } //li
+      } //ul
+    } //mq
+}
+
+// Icons from the IcoMoon free icon library
+// https://icomoon.io
+.wvu-profile__phone-icon, .wvu-profile__email, .wvu-profile__location, .wvu-profile__website {
+  background: url(../images/icon-phone.svg) no-repeat left 3px;
+  background-size: 18px;
+  padding-left: 2em;
+}
+
+.wvu-profile__email {
+  background-image: url(../images/icon-mail.svg);
+}
+
+.wvu-profile__location {
+  background-image: url(../images/icon-office.svg);
+}
+.wvu-profile__website {
+  background-image: url(../images/icon-web.svg);
+}
+
+
+.wvu-profile {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid #eeeeee;
+    ul {
+      display: block;
+      li{
+        display: list-item;
+        float: none;
+        list-style: initial;
+        margin-bottom: 1rem;
+        } //.u-link-list li
+    } //.u-link-list ul
+    &:last-child{border-bottom: none;}
+    @include mq($bp-medium) {
+      @include span-columns(6);
+      @include omega(2n);
+      border: none;
+      margin-bottom: 2rem;
+    } //mq
+    @include mq($bp-xlarge) {
+      @include omega-reset(2n);
+      @include span-columns(4);
+      @include omega(3n);
+    } //mq
+  } //li
+}
+
+
+.wvu-profile__individual {
+  width: 100%;
+  float: left;
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.wvu-profile__individual-photo{
+
+  img.round{
+    border-radius:50%;
+  }
+}
+
+.wvu-profile__name {
+  margin-bottom: 18px;
+}
+
+.wvu-profile__job-title {
+	font-weight: bold;
+}
+
+.wvu-profile__phone {
+  color: $base-font-color;
+  text-decoration: none;
+}
+
+.main__wvu-profile-individual{
+  @include mq($bp-medium) {
+    @include span-columns(6)
+  }
+}
+
+.profile-info{
+	h2{
+		@include wvu-shout();
+		padding-top: 1em;
+		&:first-child { padding-top: 0em; }
+	}
+}

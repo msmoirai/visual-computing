@@ -1,0 +1,47 @@
+// Featurette List
+
+.featurette__items{
+  @include span-columns(12);
+  list-style-type: none;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  li{
+    @include span-columns(12);
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+  }
+}
+
+
+.featurette:hover .featurette-highlight {
+  background: $wvu-gold;
+  color: $wvu-blue;
+  transition: background .3s ease;
+
+}
+
+.featurette:hover img{
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.featurette-highlight{
+  background: $wvu-blue;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 0;
+}
+
+.featurette a, .featurette a:hover{
+  text-decoration: none;
+}
+.featurette__description { max-width: 900px; margin: 0 auto; }

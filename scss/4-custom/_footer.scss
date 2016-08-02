@@ -1,0 +1,43 @@
+.wvu-footer{
+  width: 100%;
+}
+
+.wvu-footer__container{
+  @include wvu-container;
+  @include mq($bp-medium) {
+    max-width: 1080px;
+  }
+}
+
+/*College Footer*/
+.college-footer {
+  @include mq($bp-medium) {
+  	margin-bottom: 3em;
+  }
+}
+.college-contact {
+	margin-bottom:2em;
+  p { margin: 0; }
+  @include mq($bp-medium) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+    float: left;
+  }
+}
+.college-department-contact {
+	margin-bottom:2em;
+  p{ margin: 0; }
+  @include mq($bp-medium) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+    text-align: right;
+    float: right;
+    p {
+      max-width: 100%;
+    }
+  }
+}

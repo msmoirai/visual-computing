@@ -2,60 +2,39 @@
 layout: default
 ---
 
-<r:partial name="patterns/wvu-breadcrumbs" />
+<r:partial name="custom-patterns/backpage-header" />
+  <div class="wvu-container">
 
-<div class="wvu-container">
+    <main id="maincontent" class="main">
 
-  <main id="maincontent" class="main">
+      <div class="wvu-profile__meta-info">
+        <h1 class="wvu-profile__name">
+          <a href="<r:page:content name="profile-link"/>"><r:page:name/></a>
+        </h1>
+        <r:edit_mode_only>
+        <p>URL for profile goes here (leave blank for student profiles)</p>
+          <r:editable_region name="profile-link" />    
+          <p>To find a profile link, visit <a href="http://statler.wvu.edu/faculty-staff">http://statler.wvu.edu/faculty-staff</a></p>
+        </r:edit_mode_only>
+      </div>
 
-    <h1 class="wvu-profile__name">
-      <r:editable_region name="wvu-profile__name" type="simple">
-        <r:page:name/>
-      </r:editable_region>
-    </h1>
+      <!-- /.wvu-profile__meta-info -->
 
-    <div class="wvu-profile__meta-info">
-      <h2 class="wvu-profile__job-title wvu-h5">
-       <r:editable_region name="wvu-profile__job-title" type="simple">
-         Enter the person's job title or whatever subhead should go under their name.
-       </r:editable_region>
-      </h2>
-    </div> <!-- /.wvu-profile__meta-info -->
+      <div class="wvu-profile__photo">
+        <r:edit_mode_only>
+        <p>Add a profile photo by double clicking the placeholder image. The images should be 250px by 250px. If you need help resizing or uploading the image, contact <a href="mailto:jason.markle@mail.wvu.edu"/>Jason Markle</a> or, if you need a photo taken, contact <a href="mailto:paige.nesbit@mail.wvu.edu"/>Paige Nesbit</a></p>
+      </r:edit_mode_only>
+        <r:editable_region name="wvu-profile__photo">
+          <img src="http://placehold.it/250x250" />
+        </r:editable_region>
+      </div> <!-- /.wvu-profile__photo -->
 
-    <p>
-      <r:editable_region name="wvu-profile__short-description" type="simple">
-        Enter a brief description of the person. This will be pulled into the profile index page(s). Only enter a sentence or two in this region.
-      </r:editable_region>
-    </p>
+    </main><!-- /.main -->
 
-    <r:editable_region name="main">
-      <p>Enter the extended description here.</p>
-    </r:editable_region>
+    <aside class="wvu-sidebar">
+      <div class="wvu-sub-nav">
+        <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
+      </div> <!-- /.wvu-sub-nav -->
+    </aside>
 
-  </main><!-- /.main -->
-
-  <aside class="wvu-sidebar">
-    <div class="wvu-profile__photo">
-      <r:editable_region name="wvu-profile__photo">
-        Add a profile photo.
-      </r:editable_region>
-    </div> <!-- /.wvu-profile__photo -->
-    <div class="wvu-profile__meta-info">
-      <p class="wvu-profile__phone-icon">
-       <r:editable_region name="wvu-profile__phone" type="simple">
-         Enter the person's phone number.
-       </r:editable_region>
-      </p>
-      <p class="wvu-profile__email">
-       <r:editable_region name="wvu-profile__email">
-         Enter the person's email address and link it via "Standard Links" option in the Insert Link modal.
-       </r:editable_region>
-      </p>
-    </div> <!-- /.wvu-profile__meta-info -->
-    <div class="wvu-sub-nav">
-      <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
-    </div> <!-- /.wvu-sub-nav -->
-    <r:editable_region name="sidebar" />
-  </aside>
-
-</div> <!-- /.wvu-container -->
+  </div> <!-- /.wvu-container -->

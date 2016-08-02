@@ -1,0 +1,78 @@
+.hero{
+	background-color: #002855;
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+	padding: 4rem 1.5rem;
+	@include mq($bp-medium) {
+		padding: 3rem 2rem;
+	}
+	&:before{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background: radial-gradient(110% 90%, transparent, black, black);
+	  opacity: 0.75;
+		@include mq($bp-medium) {
+			background: radial-gradient(closest-corner at 70% 50%,transparent,transparent,black);
+		}
+	}
+	h1{
+		@include wvu-shout();
+		color: white;
+		font-size: 3.6rem;
+		margin-bottom: 0.5rem;
+		text-shadow: $black 2px 2px;
+		@include mq($bp-medium) {
+			padding-top: 8rem;
+			font-size: 8.8rem;
+		}/*mq*/
+	}/*h1*/
+	h2{
+		@include wvu-shout();
+		color: $wvu-gold;
+		text-shadow: $black 2px 2px;
+		font-size: 3.6rem;
+		margin-top: 0;
+		margin-bottom: .5rem;
+		@include mq($bp-medium) {
+			font-size: 8.8rem;
+			margin-bottom: 1rem;
+		}/*mq*/
+	}/*h1*/
+    p{
+			font-size: 1.2em;
+			max-width: 24em;
+			line-height: 1.48333333em;
+			color: white;
+			text-shadow: $black 2px 2px;
+			margin: 0;
+			margin-bottom: 1em;
+        @include mq($bp-medium) {
+          max-width: 38em;
+					font-size: 1.5em;
+        }/*mq*/
+    }/*p*/
+	}/*.hero*/
+
+.hero__image{
+	margin-bottom: 3rem;
+	@include mq($bp-medium) {
+		img{ max-width: 380px; }
+	}
+}
+
+.hero__container {
+	position: relative;
+  @include outer-container();
+}
+
+.hero__text { margin-bottom: 3em; font-weight: bold;
+  @include mq($bp-medium) { max-width: 40%; padding-top: 3rem;}
+}

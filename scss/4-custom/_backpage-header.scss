@@ -1,0 +1,90 @@
+.backpage-header{
+  width: 100%;
+  background: url(../images/wvu-pattern-blue.svg) no-repeat;
+  background-color: #00447c;
+  display: block;
+  background-size: cover;
+  @include mq($bp-medium) {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+}
+.backpage-header__container{
+  @include outer-container();
+  position: relative;
+  padding-left: 1em;
+  padding-right: 1em;
+  @include mq($bp-xlarge) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.backpage-header__breadcrumbs{
+  position: relative;
+  z-index: 2;
+  ul{
+    display: block;
+    padding: 1rem 0 0 0;
+    margin: 0;
+    @include mq($bp-large) {
+      padding: 1rem 0;
+      margin: 0 0 1rem 0;
+    }
+    li{
+      font-size: 1em;
+      font-weight: bold;
+      margin-right: 0.5em;
+      display: inline-block;
+      list-style-type: none;
+      color: white;
+      text-shadow: $black 2px 2px;
+      a { color: white; }
+      &:after{
+        content: "/";
+        margin-left: 0.5rem;
+      }
+      &:last-child{
+        &:after{
+          content: "";
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+.backpage-header__title{
+  margin-right: 0.5em;
+  h1{
+    @include wvu-shout();
+    color: white;
+    text-shadow: $black 2px 2px;
+    position: relative;
+  }
+  &:before{
+    content: '';
+    @include mq($bp-large) {
+      height: 120px;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      bottom: 0;
+      left: -221px;
+      background-image: url("../images/wvu-slash-gold.svg");
+      background-repeat: no-repeat;
+      background-size: 310px;
+      opacity: 1;
+    }
+  }
+}
+.backpage-header__main-overlay{
+  @include mq($bp-medium) {
+    margin-top: -10rem;
+    background-color: white;
+    padding: 2rem 3rem;
+  }
+}
+.backpage-aside{
+  @include mq($bp-medium) {
+    float: right;
+  }
+}

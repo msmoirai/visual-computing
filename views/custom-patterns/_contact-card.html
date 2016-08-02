@@ -1,0 +1,75 @@
+<div class="wvu-profile__contact-card" id="maincontent">
+  <div class="wvu-profile__contact-card__container">
+	<r:edit_mode_only>Select an image of the faculty or staff member, it should be 600x600</r:edit_mode_only>
+
+      <r:page:if_has_content_for region="wvu-profile__photo" always_show_in_edit_mode="true">
+        <div class="wvu-profile__contact-card__profile-photo">
+          <r:editable_region name="wvu-profile__photo">
+            <img src="<r:image_url name="default-profile-image.svg" />" alt="This person does not have a portrait for their profile and a generic silhouette is shown in place of this." />
+          </r:editable_region>
+        </div> <!-- /else .wvu-profile__photo -->
+      </r:page:if_has_content_for>
+
+      <div class="wvu-profile__contact-card__profile-information">
+				<h2 class="wvu-profile__name">
+		        <r:page:name />
+		    </h2>
+
+		    <h3 class="wvu-profile__job-title wvu-h5">
+      		<r:edit_mode_only>Enter the person's job title or whatever subhead should go under their name.</r:edit_mode_only>
+      		<r:editable_region name="wvu-profile__job-title" type="simple" />
+      	</h3>
+        <ul>
+        <!-- Email Address -->
+          <li>
+          <r:edit_mode_only><br><br>Enter the person's email address and link it via "Standard Links" option in the Insert Link modal.</r:edit_mode_only>
+          <r:page:if_has_content_for region="wvu-profile__email" always_show_in_edit_mode="true">
+            <p class="wvu-profile__email">
+              <r:editable_region name="wvu-profile__email" />
+            </p> <!-- /else .wvu-profile__email -->
+          </r:page:if_has_content_for>
+
+          </li><!-- /Email Address -->
+      	<!-- Phone Number -->
+
+
+      		<li>
+            <r:edit_mode_only><br><br>Enter the person's phone number.</r:edit_mode_only>
+            <r:page:if_has_content_for region="wvu-profile__phone" always_show_in_edit_mode="true">
+              <p class="wvu-profile__phone-icon">
+                <r:editable_region name="wvu-profile__phone" type="simple" />
+              </p>
+            </r:page:if_has_content_for>
+            <!-- /else .wvu-profile__phone-icon -->
+        	</li>
+        <!-- /Phone Number -->
+
+
+        <li>
+          <!-- Office Number -->
+          <r:edit_mode_only><br><br>Enter the person's building initials and office number.</r:edit_mode_only>
+          <r:page:if_has_content_for region="wvu-profile__location" always_show_in_edit_mode="true">
+            <p class="wvu-profile__location">
+              <r:editable_region name="wvu-profile__location" type="simple" />
+
+            </p> <!-- /else .wvu-profile__location -->
+          </r:page:if_has_content_for>
+          <!-- /Office Number -->
+        </li>
+
+
+
+      <!-- Website -->
+      <r:edit_mode_only><br><br>Enter the person's website URL and link it via "Standard Links" option in the Insert Link modal.</r:edit_mode_only>
+        <li>
+            <r:page:if_has_content_for region="wvu-profile__website" always_show_in_edit_mode="true">
+              <p class="wvu-profile__website">
+                <r:editable_region name="wvu-profile__website" />
+              </p> <!-- /else .wvu-profile__website -->
+            </r:page:if_has_content_for>
+        </li>
+      <!-- /Website -->
+      </ul>
+    </div>
+  </div>
+</div>

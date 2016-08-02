@@ -8,8 +8,14 @@ layout: default
 
   <main id="maincontent" class="main">
     <h2><r:page:name /></h2>
-    <r:editable_region name="main" />
-  </main>
+    <r:edit_mode_only><p>Add the publication or patent author(s)<r:page:name/></p></r:edit_mode_only>
+    <p><r:editable_region name="authors" /></p>
+    <r:edit_mode_only><p>Add additional information</p></r:edit_mode_only>
+    <p><r:editable_region name="events" /></p>
+
+
+
+  </main><!-- /.main -->
 
   <aside class="wvu-sidebar">
     <div class="wvu-sub-nav">
