@@ -9,8 +9,7 @@ layout: default
     <div class="wvu-container">
 
       <ul id="maincontent" class="publications">
-        <h2>Publications</h2>
-        <r:children:each labels="publications">
+        <r:children:each>
 
           <li>
                 <h3>
@@ -22,23 +21,6 @@ layout: default
 
           </r:children:each>
       </ul>
-
-
-    <ul class="patents">
-      <h2>Patents</h2>
-      <r:children:each labels="patents">
-
-        <li>
-              <h3>
-                <r:page:name />
-              <h3>
-                <p class="wvu-lede-small"><r:page:content name="description" /></p>
-                <p><em><r:page:content name="authors" /></em></p>
-                <p><r:page:content name="events" /></p>
-        </li>
-
-        </r:children:each>
-    </ul>
 </div>
 
 </main>
