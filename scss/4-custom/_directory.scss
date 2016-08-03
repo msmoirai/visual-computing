@@ -18,6 +18,24 @@
   }
 }
 
+.profile__items__students {
+  @include span-columns(12);
+  list-style-type: none;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  li{
+    @include span-columns(12);
+    border-bottom: 1px solid $pms-429-c;
+    &:last-child { border-bottom: none; }
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+      border-bottom: none;
+    }
+  }
+}
+
 .profile {
 	img{
     -webkit-filter: brightness(100%);
