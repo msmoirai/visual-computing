@@ -4172,9 +4172,7 @@ a:hover {
   }
 }
 
-.profile img {
-  -webkit-filter: brightness(100%);
-  filter: brightness(100%);
+.profile__students img {
   border-radius: 50%;
   display: table;
   margin: 0 auto;
@@ -4182,11 +4180,21 @@ a:hover {
   width: 250px;
 }
 
-@media (min-width: 48em) {
-  .profile img {
-    -webkit-filter: brightness(70%);
-    filter: brightness(70%);
-  }
+.profile-highlight__students {
+  color: #2C2A29;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 0;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.profile img {
+  border-radius: 50%;
+  display: table;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
 }
 
 .profile:hover img {

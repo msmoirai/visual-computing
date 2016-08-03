@@ -36,19 +36,34 @@
   }
 }
 
-.profile {
+//Students
+.profile__students {
 	img{
-    -webkit-filter: brightness(100%);
-	  filter: brightness(100%);
 		border-radius: 50%;
 		display: table;
 		margin: 0 auto;
 		height: 250px;
 		width: 250px;
-    @include mq($bp-medium) {
-    -webkit-filter: brightness(70%);
-    filter: brightness(70%);
     }
+}
+
+.profile-highlight__students{
+  color: $black;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 0;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+//Faculty
+.profile {
+	img{
+		border-radius: 50%;
+		display: table;
+		margin: 0 auto;
+		height: 250px;
+		width: 250px;
 	}
 	&:hover img {
 	  -webkit-filter: brightness(100%);
@@ -75,6 +90,7 @@
 	font-size: 1.4em;
 }
 
+//Affiliated Faculty (temporary faculty)
 .affiliated-faculty {
 	p {
 		font-weight: normal;

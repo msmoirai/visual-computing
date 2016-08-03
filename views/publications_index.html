@@ -7,20 +7,42 @@ layout: default
 <main class="wvu-section u-full-width">
 
     <div class="wvu-container">
-
-      <ul id="maincontent" class="publications">
-        <r:children:each>
-
+      <h2>Faculty Researcher</h2>
+      <ul id="maincontent" class="profile__items">
+        <r:children:each labels="director">
           <li>
-                <h3>
+            <div class="profile">
+              <a href="<r:page:content name="profile-link" />">
+                <div>
+                  <r:page:content name="wvu-profile__photo" />
+                </div>
+                <div class="profile-highlight">
                   <r:page:name />
-                <h3>
-                <p><em><r:page:content name="authors" /></em></p>
-                <p><r:page:content name="events" /></p>
+                </div>
+              </a>
+            </div>
           </li>
 
           </r:children:each>
       </ul>
+
+    <h2>Student Researchers</h2>
+    <ul id="maincontent" class="profile__items__students">
+      <r:children:each labels="student">
+
+        <li>
+          <div class="profile__students">
+              <div>
+                <r:page:content name="wvu-profile__photo" />
+              </div>
+              <div class="profile-highlight__students">
+                <r:page:name />
+              </div>
+          </div>
+        </li>
+
+        </r:children:each>
+    </ul>
 </div>
 
 </main>
