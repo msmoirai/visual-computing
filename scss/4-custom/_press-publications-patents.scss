@@ -12,12 +12,6 @@
     }
   }
 }
-.publications, .patents {
-  @include mq($bp-medium) {
-    @include span-columns(6);
-    @include omega(2);
-  }
-}
 .publications {
   margin-bottom: 6em;
   @include mq($bp-medium) {

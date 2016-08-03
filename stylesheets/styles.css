@@ -4308,21 +4308,6 @@ a:hover {
   border-top: none;
 }
 
-@media (min-width: 48em) {
-  .publications, .patents {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-  }
-  .publications:last-child, .patents:last-child {
-    margin-right: 0;
-  }
-  .publications:nth-child(2), .patents:nth-child(2) {
-    margin-right: 0;
-  }
-}
-
 .publications {
   margin-bottom: 6em;
 }
