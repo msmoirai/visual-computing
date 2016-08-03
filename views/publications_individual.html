@@ -15,6 +15,49 @@ layout: default
 
 
 
+    <r:page:if_has_content_for region="pdf" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the PDF link</p></r:edit_mode_only>
+      <r:editable_region name="pdf" />
+      <a class="button" href="<r:page:content name="pdf"/>">PDF</a>
+    </r:page:if_has_content_for>
+
+
+    <r:page:if_has_content_for region="bibtex" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Bibtex link</p></r:edit_mode_only>
+      <r:editable_region name="bibtex" />
+      <a class="button" href="<r:page:content name="bibtex"/>">Bibtex</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="code" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Code link</p></r:edit_mode_only>
+      <r:editable_region name="code" />
+      <a class="button" href="<r:page:content name="code"/>">Code</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="implementation" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Theia's implementation link</p></r:edit_mode_only>
+      <r:editable_region name="implementation" />
+      <a class="button" href="<r:page:content name="code"/>">Theia's implementation</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="video" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Video link</p></r:edit_mode_only>
+      <r:editable_region name="video" />
+      <a class="button" href="<r:page:content name="code"/>">Video</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="website" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Website link</p></r:edit_mode_only>
+      <r:editable_region name="website" />
+      <a class="button" href="<r:page:content name="code"/>">Website</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="documentation" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Documentation link</p></r:edit_mode_only>
+      <r:editable_region name="documentation" />
+      <a class="button" href="<r:page:content name="code"/>">Documentation</a>
+    </r:page:if_has_content_for>
+
   </main><!-- /.main -->
 
   <aside class="wvu-sidebar">
