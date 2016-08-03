@@ -4122,6 +4122,56 @@ a:hover {
   }
 }
 
+.profile__items__students {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+
+.profile__items__students:last-child {
+  margin-right: 0;
+}
+
+.profile__items__students li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border-bottom: 1px solid #A2AAAD;
+}
+
+.profile__items__students li:last-child {
+  margin-right: 0;
+}
+
+.profile__items__students li:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 48em) {
+  .profile__items__students li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    border-bottom: none;
+  }
+  .profile__items__students li:last-child {
+    margin-right: 0;
+  }
+  .profile__items__students li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .profile__items__students li:nth-child(3n+1) {
+    clear: left;
+  }
+}
+
 .profile img {
   -webkit-filter: brightness(100%);
   filter: brightness(100%);
