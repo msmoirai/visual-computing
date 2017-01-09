@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<r:partial name="custom-patterns/backpage-header" />
+
+
+<r:edit_mode_only>
+  <section class="wvu-section u-full-width u-pms-warm-gray-3 background">
+    <div class="wvu-container">
+      <div class="instructions">
+        <h1>Instructions</h1>
+        <p>User the editable region here to add a photo thumbnail that will show in other areas where this information is pulled to on the site</p>
+        <p><em>These instructions don't appear on the published page</em></p>
+      </div>
+      <div class="featurette-thumbail-upload">
+        <r:editable_region name="featurette-thumbnail"><img src="https://placehold.it/530x350" alt="" /></r:editable_region>
+      </div>
+    </div>
+  </section>
+</r:edit_mode_only>
+
+
+<div class="wvu-container">
+
+  <main id="maincontent" class="main">
+    <h2><r:page:name /></h2>
+    <r:editable_region name="main" />
+  </main>
+
+  <aside class="wvu-sidebar">
+    <div class="wvu-sub-nav">
+      <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
+    </div> <!-- /.wvu-sub-nav -->
+  </aside>
+
+</div> <!-- /.wvu-container -->

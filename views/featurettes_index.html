@@ -1,0 +1,44 @@
+---
+layout: default
+custom_data_attributes:
+ - limit
+---
+
+<r:set_var name="limit" value="{$limit}">
+  <r:page:data name="limit" />
+</r:set_var>
+
+<r:partial name="custom-patterns/landingpage-header" />
+
+<main class="wvu-section u-full-width">
+
+    <div class="wvu-container">
+      <ul id="maincontent" class="featurette__items">
+          <r:children:each limit="{$limit}">
+
+          <li>
+            <div class="featurette">
+              <a href="<r:page:url />">
+                <div>
+                  <r:page:content name="featurette-thumbnail" />
+                </div>
+                <div class="featurette-highlight">
+                  <r:page:name />
+                </div>
+              </a>
+            </div>
+          </li>
+
+          </r:children:each>
+      </ul>
+    </div> <!-- /.wvu-container -->
+
+</main>
+
+<section class="wvu-section u-full-width u-pms-432-c background">
+  <div class="wvu-container">
+    <div class="featurette__description">
+      <p class="wvu-lede-small"><r:editable_region name="featurette__description" type="simple">Description</r:editable_region></p>
+    </div>
+  </div>
+</section>
