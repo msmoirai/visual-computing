@@ -19,6 +19,9 @@ layout: default
                 <p class="wvu-lede-small"><r:page:content name="description" /></p>
                 <p><em><r:page:content name="authors" /></em></p>
                 <p><r:page:content name="events" /></p>
+                   <r:page:if_has_content_for region="pdf" always_show_in_edit_mode="true">
+                   <a class="button button--small" href="<r:page:content name="pdf"/>">PDF</a>
+                   </r:page:if_has_content_for>
         </li>
 
           </r:children:each>
