@@ -3473,14 +3473,14 @@ a:hover {
   overflow: hidden;
   position: relative;
   -webkit-font-smoothing: antialiased;
-  padding: 2.5rem 2.5rem;
+  padding: 1.5rem;
   /*h1*/
   /*p*/
 }
 
 @media (min-width: 48em) {
   .hero {
-    padding: 1.5rem 1.5rem;
+    padding: 3.5rem;
   }
 }
 
