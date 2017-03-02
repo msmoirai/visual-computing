@@ -6,9 +6,9 @@
   overflow: hidden;
   position: relative;
   -webkit-font-smoothing: antialiased;
-	padding: 4rem 1.5rem;
+	padding: 2.5rem 2.5rem;
 	@include mq($bp-medium) {
-		padding: 3rem 2rem;
+		padding: 1.5rem 1.5rem;
 	}
 	&:before{
 	  content: '';
@@ -20,13 +20,14 @@
 	  background: radial-gradient(110% 90%, transparent, black, black);
 	  opacity: 0.75;
 		@include mq($bp-medium) {
-			background: radial-gradient(closest-corner at 70% 50%,transparent,transparent,black);
+			background: radial-gradient(closest-corner at 0% 0%,transparent,transparent,black);
 		}
 	}
 	h1 {
     @include wvu-shout;
 		color: white;
     font-size: 2rem;
+		margin: 0em;
     span {
       display: block;
       color: $wvu-gold;
