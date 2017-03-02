@@ -32,7 +32,7 @@
 }
 
 // Responsive-nav.com toggle (inside of .nav-department)
-.nav-toggle { float: left; width: 100%; padding: 1em; text-align: center; color: white;
+.nav-toggle { float: left; width: 80%; padding: 1em; text-align: center; color: white;
   @include mq($bp-medium) { margin-left: 10px; }
   &:visited { color: white; }
   &:hover { text-decoration: none; background-color: $wvu-gold; color: $wvu-blue; }
@@ -170,4 +170,3 @@ ul.show-menu {
   }
 
 }
-
