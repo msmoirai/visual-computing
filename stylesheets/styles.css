@@ -3506,6 +3506,7 @@ a:hover {
   font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
+  color: white;
   font-size: 2rem;
   /*mq*/
 }
