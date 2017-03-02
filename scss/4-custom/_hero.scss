@@ -23,29 +23,19 @@
 			background: radial-gradient(closest-corner at 70% 50%,transparent,transparent,black);
 		}
 	}
-	h1{
-		@include wvu-shout();
-		color: white;
-		font-size: 3.6rem;
-		margin-bottom: 0.5rem;
-		text-shadow: $black 2px 2px;
-		@include mq($bp-medium) {
-			padding-top: 8rem;
-			font-size: 8.8rem;
+	h1 {
+    @include wvu-shout;
+
+    font-size: 2rem;
+    span {
+      display: block;
+      color: $wvu-gold;
+    }
+    @include mq($bp-large) {
+			font-size: 5rem;
+			line-height: 4.2rem;
 		}/*mq*/
-	}/*h1*/
-	h2{
-		@include wvu-shout();
-		color: $wvu-gold;
-		text-shadow: $black 2px 2px;
-		font-size: 3.6rem;
-		margin-top: 0;
-		margin-bottom: .5rem;
-		@include mq($bp-medium) {
-			font-size: 8.8rem;
-			margin-bottom: 1rem;
-		}/*mq*/
-	}/*h1*/
+  }/*h1*/
     p{
 			font-size: 1.2em;
 			max-width: 24em;

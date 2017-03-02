@@ -3475,7 +3475,6 @@ a:hover {
   -webkit-font-smoothing: antialiased;
   padding: 4rem 1.5rem;
   /*h1*/
-  /*h1*/
   /*p*/
 }
 
@@ -3507,10 +3506,7 @@ a:hover {
   font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  color: white;
-  font-size: 3.6rem;
-  margin-bottom: 0.5rem;
-  text-shadow: #2C2A29 2px 2px;
+  font-size: 2rem;
   /*mq*/
 }
 
@@ -3518,34 +3514,15 @@ a:hover {
   font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
 }
 
-@media (min-width: 48em) {
-  .hero h1 {
-    padding-top: 8rem;
-    font-size: 8.8rem;
-  }
-}
-
-.hero h2 {
-  line-height: 0.80487em;
-  font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
+.hero h1 span {
+  display: block;
   color: #EAAA00;
-  text-shadow: #2C2A29 2px 2px;
-  font-size: 3.6rem;
-  margin-top: 0;
-  margin-bottom: .5rem;
-  /*mq*/
 }
 
-.fonts-loaded .hero h2 {
-  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-}
-
-@media (min-width: 48em) {
-  .hero h2 {
-    font-size: 8.8rem;
-    margin-bottom: 1rem;
+@media (min-width: 60em) {
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 4.2rem;
   }
 }
 
