@@ -3497,7 +3497,8 @@ a:hover {
 
 @media (min-width: 48em) {
   .hero:before {
-    background: radial-gradient(closest-corner at 0% 0%, transparent, transparent, black);
+    background: radial-gradient(closest-corner at 110% 90%, transparent, transparent, black);
+    opacity: 0.75;
   }
 }
 
