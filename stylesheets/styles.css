@@ -3495,13 +3495,6 @@ a:hover {
   opacity: 0.75;
 }
 
-@media (min-width: 48em) {
-  .hero:before {
-    background: radial-gradient(closest-corner at 110% 90%, transparent, transparent, black);
-    opacity: 0.75;
-  }
-}
-
 .hero h1 {
   line-height: 0.80487em;
   font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
