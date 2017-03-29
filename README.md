@@ -1,4 +1,4 @@
-Human Computer Interaction
+Visual Computing
 ==================
 
 **Theme Name:** engineering-visual-computing
