@@ -19,9 +19,7 @@
 	  left: 0;
 	  background: radial-gradient(110% 90%, transparent, black, black);
 	  opacity: 0.75;
-		@include mq($bp-medium) {
-			background: radial-gradient(closest-corner at 0% 0%,transparent,transparent,black);
-		}
+
 	}
 	h1 {
     @include wvu-shout;
