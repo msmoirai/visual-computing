@@ -1,13 +1,14 @@
 Human Computer Interaction
 ==================
 
-**Theme Name:** engineering-human-computer-interaction
+**Theme Name:** engineering-visual-computing
 
-**Theme Description:** Theme for Human Computer Interaction.
+**Theme Description:** Theme for Visual Computing.
 
-**Developers name(s):** Jason Markle
+**Developers name(s):** Jason Markle, Michelle Moirai
 
-**Stash repository URL:** [https://stash.development.wvu.edu/projects/CST/repos/engineering-human-computer-interaction/browse](https://stash.development.wvu.edu/projects/CST/repos/engineering-human-computer-interaction/browse)
+**Bitbucket repository URL:**
+(https://msmoirai@bitbucket.org/wvudigital/engineering-visual-computing.git)
 
 **Dependencies necessary to work with this theme:** Sass.
 
