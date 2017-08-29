@@ -63,4 +63,23 @@ layout: default
     </ul>
 </div>
 
+<h2>Alumni</h2>
+<ul id="maincontent" class="profile__items__students">
+  <r:children:each labels="alumni">
+
+    <li>
+      <div class="profile__students">
+          <div>
+            <r:page:content name="wvu-profile__photo" />
+          </div>
+          <div class="profile-highlight__students">
+            <r:page:name />
+          </div>
+      </div>
+    </li>
+
+    </r:children:each>
+</ul>
+</div>
+
 </main>
